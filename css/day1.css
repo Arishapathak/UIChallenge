@@ -1,0 +1,124 @@
+:root{
+    font-size:100%;
+    line-height: 1.5;
+}
+h1,h2{
+    font-family: monospace;
+}
+body{
+   padding: 0;
+   margin: 0;
+   font-weight: 500;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.page{
+ display: flex;
+ flex-direction: column;
+ 
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.small{
+    text-align: center;
+}
+.left , .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+height:300px;
+}
+.left{
+    /* background-image: url('C:\Users\hp\Downloads\alex-knight-2EJCSULRwC8-unsplash.jpg'); */
+    background-image: url(undraw_awesome_rlvy.png);
+    background-position: center center;
+  
+    background-size: cover;}
+
+.left .copy{
+    text-align: center;
+}
+.left p{
+    font-weight: 400;
+}
+.right{
+    background-color: lavender;
+}
+.right .copy, .privacy{
+    text-align: center;
+    font-weight: 328px;
+}
+.right .copy p{
+    margin: 1.5rem 0;
+}
+.right form{
+    width: 328px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid blueviolet;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.975rem;
+    
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+
+}
+.input-container.password{
+    position: relative;
+}
+.input-container.password i{
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+button{
+    color: white;
+    background-color: blueviolet;
+    border-radius: 8px;
+    width: 328px;
+    height: 30px;
+}
+.checked-container input:checked-checkmark:after{
+    display: block;
+    
+}
+button:hover{
+    cursor: pointer;
+}
+@media screen and (min-width:980px)
+{
+    .page{
+        flex-direction: row;
+        height: 100vh;
+
+    }
+    .left, .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+
+    }
+}
